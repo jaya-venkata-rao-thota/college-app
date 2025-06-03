@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📊 What is an Algorithm?</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f9fc;
+      color: #34495e;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
+    }
+    h1 {
+      color: #27ae60;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    pre {
+      background: #eaf2f8;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: Consolas, monospace;
+    }
+    a {
+      color: #27ae60;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📊 What is an Algorithm?</h1>
+
+  <p>An algorithm is a step-by-step set of instructions or rules designed to solve a specific problem or perform a computation. Algorithms are the heart of computer science and programming, helping us transform input data into useful output efficiently.</p>
+
+  <p>Algorithms can be simple or complex, but they all share some common characteristics:</p>
+  <ul>
+    <li><strong>Well-defined steps:</strong> Each step must be clear and unambiguous.</li>
+    <li><strong>Input:</strong> An algorithm accepts zero or more inputs.</li>
+    <li><strong>Output:</strong> Produces at least one output.</li>
+    <li><strong>Finiteness:</strong> The algorithm must complete after a finite number of steps.</li>
+    <li><strong>Effectiveness:</strong> Each step is basic enough to be performed exactly and in finite time.</li>
+  </ul>
+
+  <p>Algorithms are used everywhere in computing, including sorting data, searching databases, routing internet traffic, and much more.</p>
+
+  <h2>Common Types of Algorithms:</h2>
+  <ul>
+    <li><strong>Sorting Algorithms:</strong> Arrange data in a particular order (e.g., Bubble Sort, Merge Sort).</li>
+    <li><strong>Searching Algorithms:</strong> Find specific data within a structure (e.g., Linear Search, Binary Search).</li>
+    <li><strong>Recursive Algorithms:</strong> Solve problems by calling themselves with smaller inputs.</li>
+    <li><strong>Divide and Conquer:</strong> Break problem into subproblems, solve independently, and combine results.</li>
+  </ul>
+
+  <h2>Example: Bubble Sort Algorithm in Python</h2>
+  <pre><code>def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+numbers = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort(numbers)
+print("Sorted array is:", numbers)
+  </code></pre>
+
+  <p>Bubble Sort repeatedly steps through the list, compares adjacent items, and swaps them if they are in the wrong order. It’s simple but inefficient for large datasets.</p>
+
+  <h2>Example: Binary Search Algorithm in Python</h2>
+  <pre><code>def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+
+numbers = [11, 22, 25, 34, 64, 90]
+index = binary_search(numbers, 25)
+print("Element found at index:", index)
+  </code></pre>
+
+  <p>Binary Search works on sorted arrays by repeatedly dividing the search interval in half. It’s much faster than linear search for large datasets.</p>
+
+  <p>Understanding algorithms and their efficiencies helps developers write optimized and effective code.</p>
+
+  <a href="index.html">⬅️ Back to Home</a>
+</body>
+</html>

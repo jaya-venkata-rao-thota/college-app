@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn Computer Science with Venkat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f2f6;
+      color: #2f3542;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #70a1ff;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      font-size: 1.4em;
+      color: #3742fa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #57606f;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Let's Learns Computer Science</h1>
+    <p>Select a topic below to dive deeper 👇</p>
+  </header>
+
+  <div class="grid">
+    <div class="card" onclick="location.href='computer.html'">
+      <h2>🖥️ What is a Computer?</h2>
+    </div>
+    <div class="card" onclick="location.href='programming.html'">
+      <h2>💡 What is Programming?</h2>
+    </div>
+    <div class="card" onclick="location.href='python.html'">
+      <h2>🐍 Learn Python</h2>
+    </div>
+    <div class="card" onclick="location.href='java.html'">
+      <h2> ☕ Learn Java</h2>
+    </div>
+    <div class="card" onclick="location.href='web.html'">
+      <h2>🌐 Web Development</h2>
+    </div>
+    <div class="card" onclick="location.href='db.html'">
+      <h2>🗄️ Databases</h2>
+    </div>
+    <div class="card" onclick="location.href='alg.html'">
+      <h2>⚙️ Algorithms</h2>
+    </div>
+    <div class="card" onclick="location.href='ai.html'">
+      <h2>🤖 Artificial Intelligence</h2>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Venkat's CS Website | Keep Exploring & Keep Learning
+  </footer>
+
+</body>
+</html>
